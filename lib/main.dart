@@ -1,13 +1,8 @@
 import 'package:flutter/material.dart';
 
+import 'myapp.dart';
+
 void main() {
   runApp(MyApp());
 }
 
-class MyApp extends StatelessWidget  {
-
-  @override
-  Widget build(BuildContext context) {
-    return Text('vamos lá', textDirection: TextDirection.rtl,);
-  }
-}
