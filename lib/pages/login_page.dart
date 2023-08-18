@@ -1,3 +1,4 @@
+import 'package:estudos/components/buttom.dart';
 import 'package:flutter/material.dart';
 
 import '../components/textField.dart';
@@ -5,6 +6,10 @@ import '../components/textField.dart';
 class LoginPage extends StatelessWidget {
   final usernameController = TextEditingController();
   final passwordController = TextEditingController();
+
+  void signIn() {
+
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -39,16 +44,24 @@ class LoginPage extends StatelessWidget {
                 hintText: 'Senha',
                 obscureText: true,
               ),
-              SizedBox(height: 20),
-              Text(
-                'Esqueceu a senha?',
-                style: TextStyle(
-                  color: Colors.black54,
-                  fontSize: 20,
+              SizedBox(height: 10),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                child: Row( mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    Text(
+                      'Esqueceu a senha?',
+                      style: TextStyle(
+                        color: Colors.black54,
+                        fontSize: 20,
+                      ),
+                    ),
+                  ],
                 ),
               ),
 
               SizedBox(height: 20),
+              ButtomLogin(onTap: signIn)
             ],
           ),
         ),
