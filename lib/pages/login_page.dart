@@ -20,13 +20,13 @@ class LoginPage extends StatelessWidget {
           child: Column(
             children: [
               SizedBox(height: 50),
-              Icon(
+              const Icon(
                 Icons.face,
                 size: 100,
                 color: Colors.orange,
               ),
               SizedBox(height: 50),
-              Text(
+              const Text(
                 'Bem-vindo de volta!',
                 style: TextStyle(
                   color: Colors.black54,
@@ -48,7 +48,7 @@ class LoginPage extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 16.0),
                 child: Row( mainAxisAlignment: MainAxisAlignment.end,
-                  children: [
+                  children: const [
                     Text(
                       'Esqueceu a senha?',
                       style: TextStyle(

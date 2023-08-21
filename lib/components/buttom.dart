@@ -12,7 +12,11 @@ class ButtomLogin extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: onTap,
+      onTap: () {
+
+        print('click');
+        Navigator.pushNamed(context, '/dashboard');
+      },
       child: Container(
         padding: const EdgeInsets.all(35),
         margin: const EdgeInsets.symmetric(horizontal: 20),
@@ -29,6 +33,7 @@ class ButtomLogin extends StatelessWidget {
                 fontSize: 15,
               ),
           ),
+
         ),
       ),
     );

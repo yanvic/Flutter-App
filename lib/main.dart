@@ -1,3 +1,4 @@
+import 'package:estudos/pages/dashboard_page.dart';
 import 'package:flutter/material.dart';
 import 'pages/login_page.dart';
 
@@ -12,6 +13,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  MaterialApp(
+      routes: {
+        '/dashboard': (context) => DashboardPage(),
+      },
       debugShowCheckedModeBanner: false,
       home: LoginPage(),
     );
