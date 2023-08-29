@@ -1,14 +1,22 @@
+import 'package:flutter/cupertino.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 
-class Navbar extends StatelessWidget {
-  Navbar({
-    super.key,
-  });
+class DashboardPage extends StatelessWidget {
+
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      body: SafeArea(
+        child: Column(
+          children: const [
+            Text(
+              'Bem vindo',
+            ),
+          ],
+        ),
+      ),
       bottomNavigationBar: CurvedNavigationBar(
         backgroundColor: Colors.white,
         color: Colors.red,
@@ -18,8 +26,11 @@ class Navbar extends StatelessWidget {
           Icon(Icons.home, size: 30),
           Icon(Icons.account_circle_outlined, size: 30),
         ],
-        onTap: (index) {},
+        onTap: (index) {
+
+        },
       ),
     );
+
   }
 }
