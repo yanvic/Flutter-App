@@ -3,6 +3,8 @@ import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
+import '../components/list.dart';
+
 class DashboardPage extends StatelessWidget {
 
 
@@ -60,45 +62,30 @@ class DashboardPage extends StatelessWidget {
                 height: 90,
               ),
 
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Container(
-                    height: 80,
-                    padding: EdgeInsets.all(15),
-                    decoration: BoxDecoration(
-                        color: Colors.yellow,
-                        borderRadius: BorderRadius.circular(20)
+
+              Padding(padding: const EdgeInsets.all(10),
+                child: Column(
+                  children: [
+                    ListTitle(
+                        iconImagePath: 'lib/images/downloa.png',
+                        tileTitle: 'Backups',
+                        tileSubTitle: 'Faça seu backup',
                     ),
-                    child: Image.asset('lib/icons/'),
-                  ),
-                    SizedBox(
-                      width: 50,
+                    ListTitle(
+                      iconImagePath: 'lib/images/downloa.png',
+                      tileTitle: 'Backups',
+                      tileSubTitle: 'Faça seu backup',
                     ),
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          'alog',
-                          style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                            fontSize: 30
-                          ),
-                        ),
-                        SizedBox(
-                          height: 8,
-                        ),
-                        Text(
-                          'payment',
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 30, color: Colors.green,
-                          ),
-                        ),
-                      ],
-                    ),
-                ],
-              )
+                    ListTitle(
+                      iconImagePath: 'lib/images/downloa.png',
+                      tileTitle: 'Backups',
+                      tileSubTitle: 'Faça seu backup',
+                    )
+                  ],
+                ),
+
+              ),
+
             ],
           ),
         ),
