@@ -38,24 +38,24 @@ class ListTitle extends StatelessWidget {
           children: [
             Text(
               tileTitle,
-              style: TextStyle(
+              style: const TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 20,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 8,
             ),
             Text(
               tileSubTitle,
-              style: TextStyle(
+              style: const TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 20, color: Colors.grey,
               ),
             ),
           ],
         ),
-        Icon(Icons.arrow_forward_ios),
+        const Icon(Icons.arrow_forward_ios),
       ],
     );
   }
